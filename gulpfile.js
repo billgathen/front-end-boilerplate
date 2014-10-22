@@ -16,6 +16,10 @@
  * Open Chrome to http://localhost:8080
  * Press LiveReload button to enable (requires Chrome LiveReload extension)
  * To deploy your app, the contents of the dist directory are all you need
+ *
+ * TO-DO
+ * - http://addyosmani.com/blog/removing-unused-css/
+ * - gzip
  */
 
 // Load plugins
