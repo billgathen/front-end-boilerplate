@@ -1,6 +1,8 @@
 /*!
  * HOW TO USE
  *
+ * Based on http://markgoodyear.com/2014/01/getting-started-with-gulp/
+ *
  * $ npm init
  * $ npm install gulp gulp-ruby-sass gulp-autoprefixer gulp-minify-css gulp-jshint gulp-concat gulp-uglify gulp-imagemin gulp-notify gulp-rename gulp-livereload gulp-cache del --save-dev
  * Expects src tree: html, images, scripts, styles
