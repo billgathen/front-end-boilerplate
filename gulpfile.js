@@ -9,11 +9,9 @@
  * Expects dist tree: images, scripts, styles
  * Add your HTML files into src/html, they will be copied into dist
  * Add your Sass/CSS into src/styles/main.scss
- * In one terminal window, start an HTTP server
-   $ cd dist; python -m SimpleHTTPServer
  * In another terminal window, start the watcher
    $ gulp watch
- * Open Chrome to http://localhost:8080
+ * A Node server has been started to serve your content, so open Chrome to http://localhost:8080
  * Press LiveReload button to enable (requires Chrome LiveReload extension)
  * To deploy your app, the contents of the dist directory are all you need
  *
@@ -35,6 +33,7 @@ var gulp = require('gulp'),
     notify = require('gulp-notify'),
     cache = require('gulp-cache'),
     livereload = require('gulp-livereload'),
+    connect = require('gulp-connect'),
     del = require('del');
 
 // Styles
@@ -73,6 +72,14 @@ gulp.task('images', function() {
 // Clean
 gulp.task('clean', function(cb) {
     del(['dist/assets/css', 'dist/assets/js', 'dist/assets/img'], cb)
+});
+
+// Static web server
+gulp.task('server', function() {
+  connect.server({
+    root: 'dist',
+    livereload: false
+  });
 });
 
 // Default task
