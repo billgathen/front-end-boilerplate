@@ -4,7 +4,7 @@ A full set of front-end development tools, based around NPM and Gulp.
 
 [NPM](http://npmjs.org) is the standard package manager for Node. [Go here](http://nodejs.org) and click "Install" to get Node and NPM if you don't already have them. You won't need to use Node directly if you don't want to, so don't be concerned if you want to use something else as your back-end solution.
 
-[Gulp](http://gulpjs.com) is a task management tool for building, testing and optimizing your web app projects. It takes care of all the boring-but-necessary tasks required to make high-quality web apps.
+[Gulp](http://gulpjs.com) is a task management tool for building, testing and optimizing your web app projects. It takes care of all the boring-but-necessary tasks required to make high-quality web apps. Use ```npm install gulp -g``` to make Gulp available everywhere in your system.
 
 ## Features
 
