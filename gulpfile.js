@@ -5,19 +5,11 @@
  *
  * $ npm init
  * $ npm install gulp gulp-ruby-sass gulp-autoprefixer gulp-minify-css gulp-jshint gulp-concat gulp-uglify gulp-imagemin gulp-notify gulp-rename gulp-livereload gulp-cache del --save-dev
- * Expects src tree: html, images, scripts, styles
- * Expects dist tree: images, scripts, styles
- * Add your HTML files into src/html, they will be copied into dist
- * Add your Sass/CSS into src/styles/main.scss
- * In another terminal window, start the watcher
-   $ gulp watch
- * A Node server has been started to serve your content, so open Chrome to http://localhost:8080
- * Press LiveReload button to enable (requires Chrome LiveReload extension)
- * To deploy your app, the contents of the dist directory are all you need
  *
  * TO-DO
  * - http://addyosmani.com/blog/removing-unused-css/
  * - gzip
+ * - Hapi back-end
  */
 
 // Load plugins
