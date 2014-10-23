@@ -31,10 +31,10 @@ Gulp gives you a bunch of great stuff without lifting a finger. It just happens 
 
 - Clone this repo to your local system under your chosen project name
 - Delete the ```.git``` directory
-- ```git init``` to start a new, clean repo for your project
+- ```git init; git add --all; git commit -m "Initial commit"``` to start a new, clean repo for your project
 - ```npm init``` will prompt you for information about your project.
-- ```npm install gulp gulp-ruby-sass gulp-autoprefixer gulp-minify-css gulp-jshint gulp-concat gulp-uglify gulp-imagemin gulp-notify gulp-rename gulp-livereload gulp-cache del --save-dev``` will load all the components into a ```node_modules``` directory where NPM and Gulp can find them.
-- ```gulp watch``` will start a server to serve your content on [http://localhost:8080](http://localhost:8080), live-reloading all your changes as you save your files. You'll need the [Chrome LiveReload extension](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei) for this to work.
+- ```npm install gulp gulp-ruby-sass gulp-autoprefixer gulp-minify-css gulp-jshint gulp-concat gulp-uglify gulp-imagemin gulp-notify gulp-rename gulp-livereload gulp-connect gulp-cache del --save-dev``` will load all the components into a ```node_modules``` directory where NPM and Gulp can find them.
+- ```gulp watch``` will start a server to serve your content on [http://localhost:8080](http://localhost:8080), live-reloading all your changes as you save your files. You'll need the [Chrome LiveReload extension](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei) for this to work. **NOTE** livereload only picks up edits to existing files: use ctrl-c to stop the watcher and restart to capture new html/js/img/styles.
 - The code you edit is in the ```src``` directory structure:
   - ```html``` for HTML
   - ```scripts``` for Javascript

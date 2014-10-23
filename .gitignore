@@ -1,3 +1,11 @@
+# distribution directory (comment these out if you want this versioned in your app)
+dist/html/*
+dist/images/*
+dist/scripts/*
+dist/styles/*
+
+.sass-cache
+
 # Logs
 logs
 *.log
