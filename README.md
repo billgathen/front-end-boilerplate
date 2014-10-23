@@ -34,6 +34,6 @@ Gulp gives you a bunch of great stuff without lifting a finger. It just happens 
 - ```git init``` to start a new, clean repo for your project
 - ```npm init``` will prompt you for information about your project.
 - ```npm install gulp gulp-ruby-sass gulp-autoprefixer gulp-minify-css gulp-jshint gulp-concat gulp-uglify gulp-imagemin gulp-notify gulp-rename gulp-livereload gulp-cache del --save-dev``` will load all the components into a ```node_modules``` directory where NPM and Gulp can find them.
-- ```gulp watch``` will start a server to serve your content on http://localhost:8080, live-reloading all your changes as you save your files. You'll need the [Chrome LiveReload extension](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei) for this to work.
+- ```gulp watch``` will start a server to serve your content on [http://localhost:8080](http://localhost:8080), live-reloading all your changes as you save your files. You'll need the [Chrome LiveReload extension](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei) for this to work.
 - The code you edit is in the ```src``` directory structure: HTML goes in ```html```, JavaScript goes in ```scripts```, CSS and Sass files go in ```styles```, images go in ```images```. It will all be optimized and copied into the ```dist``` directory as you develop.
 - When you're ready to push your code to an actual web server, everything you need is in the ```dist``` directory: don't push the rest.
