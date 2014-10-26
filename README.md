@@ -33,7 +33,7 @@ Gulp gives you a bunch of great stuff without lifting a finger. It just happens 
 - Delete the ```.git``` directory
 - ```git init; git add --all; git commit -m "Initial commit"``` to start a new, clean repo for your project
 - ```npm init``` will prompt you for information about your project.
-- ```npm install gulp gulp-ruby-sass gulp-autoprefixer gulp-minify-css gulp-jshint gulp-concat gulp-uglify gulp-imagemin gulp-notify gulp-rename gulp-livereload gulp-connect del --save-dev``` will load all the components into a ```node_modules``` directory where NPM and Gulp can find them.
+- ```npm install gulp gulp-ruby-sass gulp-autoprefixer gulp-minify-css gulp-jshint gulp-concat gulp-uglify gulp-imagemin gulp-notify gulp-rename gulp-livereload gulp-connect del karma karma-jasmine karma-chrome-launcher --save-dev``` will load all the components into a ```node_modules``` directory where NPM and Gulp can find them.
 - ```gulp watch``` will start a server to serve your content on [http://localhost:8080](http://localhost:8080), live-reloading all your changes as you save your files. You'll need the [Chrome LiveReload extension](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei) for this to work. **NOTE** livereload only picks up edits to existing files: use ctrl-c to stop the watcher and restart to capture new html/js/img/styles.
 - The code you edit is in the ```src``` directory structure:
   - ```html``` for HTML
@@ -42,4 +42,5 @@ Gulp gives you a bunch of great stuff without lifting a finger. It just happens 
   - ```images``` for images
 
   It will all be optimized and copied into the ```dist``` directory as you develop.
+- Your Jasmine specs go in the ```test``` directory structure. An example has been provided.
 - When you're ready to push your code to an actual web server, everything you need is in the ```dist``` directory: don't push the rest.

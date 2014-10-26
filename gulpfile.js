@@ -25,6 +25,7 @@ var gulp = require('gulp'),
     notify = require('gulp-notify'),
     livereload = require('gulp-livereload'),
     connect = require('gulp-connect'),
+    karma = require('karma').server,
     del = require('del');
 
 // Styles
@@ -80,13 +81,24 @@ gulp.task('server', function() {
   });
 });
 
+// Test runner
+gulp.task('test', function(done) {
+  karma.start({
+    configFile: __dirname + '/karma.conf.js',
+    singleRun: true
+  }, done);
+});
+
+// Build all assets
+gulp.task('build', ['html', 'styles', 'scripts', 'images']);
+
 // Default task
 gulp.task('default', ['clean'], function() {
-    gulp.start('styles', 'scripts', 'images');
+    gulp.start('build', 'test');
 });
 
 // Watch
-gulp.task('watch', [ 'html', 'styles', 'scripts', 'images', 'server' ], function() {
+gulp.task('watch', [ 'build', 'test', 'server' ], function() {
   
   // Watch .html files
   gulp.watch('src/html/**/*.html', ['html']);
@@ -99,6 +111,9 @@ gulp.task('watch', [ 'html', 'styles', 'scripts', 'images', 'server' ], function
 
   // Watch image files
   gulp.watch('src/images/**/*', ['images']);
+
+  // Watch test files
+  gulp.watch('test/**/*Spec.js', ['test']);
 
   // Create LiveReload server
   livereload.listen();
