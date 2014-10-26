@@ -4,6 +4,6 @@ describe("A suite", function() {
   });
 
   it("can see tests", function() {
-    expect(echo('hello')).toBe('hellos');
+    expect(echo('hello')).toBe('hello');
   });
 });

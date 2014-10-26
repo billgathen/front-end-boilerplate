@@ -86,7 +86,14 @@ gulp.task('test', function(done) {
   karma.start({
     configFile: __dirname + '/karma.conf.js',
     singleRun: true
-  }, done);
+  }, function(err) {
+    var message = 'All test pass!';
+    if (err === 1) {
+      message = 'Some tests failed: check terminal';
+    }
+    gulp.src('').pipe(notify({ message: message }));
+    done();
+  });
 });
 
 // Build all assets
