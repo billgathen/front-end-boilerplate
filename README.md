@@ -17,6 +17,7 @@ Gulp gives you a bunch of great stuff without lifting a finger. It just happens 
 - JS uglification/minification/concatenation
 - Image optimization
 - Live Reload in the browser (no more refreshing!)
+- Karma + Jasmine for JavaScript testing
 - Built-in web server
 
 ## Coming Soon
@@ -25,7 +26,6 @@ Gulp gives you a bunch of great stuff without lifting a finger. It just happens 
 - UnCSS (removing unused rules on-the-fly)
 - Browserify for client-side dependencies
 - Hapi.js starter kit for Node dev
-- Karma + Jasmine for automated tests (server and browser)
 
 ## Installation
 
