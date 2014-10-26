@@ -42,5 +42,5 @@ Gulp gives you a bunch of great stuff without lifting a finger. It just happens 
   - ```images``` for images
 
   It will all be optimized and copied into the ```dist``` directory as you develop.
-- Your Jasmine specs go in the ```test``` directory structure. An example has been provided.
+- Your Jasmine specs go in the ```test``` directory structure. An example has been provided. All specs will be rerun when your scripts or specs change.
 - When you're ready to push your code to an actual web server, everything you need is in the ```dist``` directory: don't push the rest.
