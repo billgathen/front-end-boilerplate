@@ -22,6 +22,7 @@ Gulp gives you a bunch of great stuff without lifting a finger. It just happens 
 
 ## Coming Soon
 
+- Cache-busting
 - Gzipped assets
 - UnCSS (removing unused rules on-the-fly)
 - Browserify for client-side dependencies
