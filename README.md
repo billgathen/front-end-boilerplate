@@ -1,5 +1,7 @@
 # Front-end Boilerplate
 
+**EXPERIMENTAL: NOT INTENDED FOR PRODUCTION** There are definitely better solutions out there. Find one or build your own.
+
 A full set of front-end development tools, based around NPM and Gulp.
 
 [NPM](http://npmjs.org) is the standard package manager for Node. [Go here](http://nodejs.org) and click "Install" to get Node and NPM if you don't already have them. You won't need to use Node directly if you don't want to, so don't be concerned if you want to use something else as your back-end solution.
