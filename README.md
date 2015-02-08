@@ -1,6 +1,6 @@
-# Front-end Boilerplate
-
 **EXPERIMENTAL: NOT INTENDED FOR PRODUCTION** There are definitely better solutions out there. Find one or build your own.
+
+# Front-end Boilerplate
 
 A full set of front-end development tools, based around NPM and Gulp.
 
